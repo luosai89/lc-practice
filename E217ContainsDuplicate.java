@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class E217ContainsDuplicate {
     public boolean containsDuplicate(int[] nums) {
         Arrays.sort(nums);
