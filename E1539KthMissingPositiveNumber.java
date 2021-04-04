@@ -15,6 +15,7 @@ public class E1539KthMissingPositiveNumber {
         }
         // after the while loop, i could very well be 0 (the first missing number occurred before the first ever element)
         // for array questions, important to question could index be out of bound
+        // there's a binary search solution that I have not fully comprehended
         if (i > 0) {
             return arr[--i] + (k-n);
         }
