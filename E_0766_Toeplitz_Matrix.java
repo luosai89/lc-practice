@@ -1,4 +1,4 @@
-class E766ToeplitzMatrix {
+class E_0766_Toeplitz_Matrix {
     public boolean isToeplitzMatrix(int[][] matrix) {
         int r = matrix.length;
         int c = matrix[0].length;

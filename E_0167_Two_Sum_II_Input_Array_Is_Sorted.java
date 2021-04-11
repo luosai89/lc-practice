@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.List;
 
-public class E167TwoSumIIInputArrayIsSorted {
+public class E_0167_Two_Sum_II_Input_Array_Is_Sorted {
     public static int[] twoSum(int[] numbers, int target) {
         int[] result = new int[2];
         for (int i = 0; i < numbers.length; i++) {

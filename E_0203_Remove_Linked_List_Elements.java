@@ -1,17 +1,17 @@
-package LInkedList;
-
 /**
- * 4/10/2021 
+ * 4/10/2021 https://leetcode.com/problems/remove-linked-list-elements/
  */
-public class E203RemoveLinkedListElements {
+public class E_0203_Remove_Linked_List_Elements {
     public static ListNode removeElements(ListNode head, int val) {
+        // TODO - pay attention to head node (and future head nodes) that are offending
         while (head != null && head.val == val) {
             head = head.next;
         }
         ListNode p = head;
         while (p != null && p.next != null) {
+            // TODO - you do not need to "advance" to the next node here, because you essentially have advanced
             if (p.next.val == val) p.next = p.next.next;
-            //
+            // TODO - else is necessary here
             else p = p.next;
         }
         return head;

@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class E217ContainsDuplicate {
+class E_0217_Contains_Duplicate {
     public boolean containsDuplicate(int[] nums) {
         Arrays.sort(nums);
         for (int i = 1; i < nums.length; i++) {

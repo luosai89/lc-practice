@@ -2,7 +2,7 @@
 * 3/30/2021 https://leetcode.com/problems/design-linked-list/
 *
 */
-class MyLinkedList {
+class M_0707_DesignLinkedList {
     IntNode sentinel;
     int size;
 
@@ -18,7 +18,7 @@ class MyLinkedList {
     }
 
     /** Initialize your data structure here. */
-    public MyLinkedList() {
+    public M_0707_DesignLinkedList() {
         sentinel = new IntNode(null, 721, null);
         sentinel.prev = sentinel;
         sentinel.next = sentinel;
@@ -83,8 +83,8 @@ class MyLinkedList {
 }
 
 /**
- * Your MyLinkedList object will be instantiated and called as such:
- * MyLinkedList obj = new MyLinkedList();
+ * Your M_0707_DesignLinkedList object will be instantiated and called as such:
+ * M_0707_DesignLinkedList obj = new M_0707_DesignLinkedList();
  * int param_1 = obj.get(index);
  * obj.addAtHead(val);
  * obj.addAtTail(val);

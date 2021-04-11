@@ -8,7 +8,7 @@ import java.util.Set;
  * method 2 - sort both arrays + one hash set + two pointers
  * method 3 - sort one array + one hash set + binary search
  */
-public class E349IntersectionOfTwoArrays {
+public class E_0349_Intersection_Of_TwoArrays {
     public static int[] intersection(int[] nums1, int[] nums2) {
         Arrays.sort(nums1); // O(n)
         Arrays.sort(nums2); // O(n)

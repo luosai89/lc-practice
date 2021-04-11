@@ -1,7 +1,7 @@
 /**
  * 4/2/2021 https://leetcode.com/problems/kth-missing-positive-number/
  */
-public class E1539KthMissingPositiveNumber {
+public class E_1539_Kth_Missing_Positive_Number {
     public static int findKthPositive(int[] arr, int k) {
         int n = 0;
         int i = 0;

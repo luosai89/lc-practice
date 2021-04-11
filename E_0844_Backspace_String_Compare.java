@@ -1,7 +1,7 @@
 /**
  * 4/6/2021 https://leetcode.com/problems/backspace-string-compare/
  */
-public class E844BackspaceStringCompare {
+public class E_0844_Backspace_String_Compare {
     public static boolean backspaceCompare(String s, String t) {
         int s_pointer = s.length() - 1;
         int t_pointer = t.length() - 1;

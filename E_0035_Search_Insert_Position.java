@@ -1,7 +1,7 @@
 /**
  * 4/3/2021 https://leetcode.com/problems/search-insert-position/
  */
-public class E35SearchInsertPosition {
+public class E_0035_Search_Insert_Position {
     public int searchInsert(int[] nums, int target) {
         int start = 0;
         int end = nums.length - 1;

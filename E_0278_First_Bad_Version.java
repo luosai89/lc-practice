@@ -2,7 +2,7 @@
  * 4/4/2021 https://leetcode.com/problems/first-bad-version/
  * Runtime and memory usage seemed lower than ideal. Need to check up-voted answers.
  */
-public class E278FirstBadVersion {
+public class E_0278_First_Bad_Version {
     public static int firstBadVersion(int n) {
         int lastGood = 0;
         int start = 1;

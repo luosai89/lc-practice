@@ -2,7 +2,7 @@
  * 4/9/2021 https://leetcode.com/problems/n-th-tribonacci-number/
  */
 
-public class E1137NthTribonacciNumber {
+public class E_1137_Nth_Tribonacci_Number {
     public int tribonacci(int n) {
         if (n < 3) {
             return n == 0 ? 0 : 1;

@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class U3W1FunWithAnagrams {
+public class U3_W1_Fun_With_Anagrams {
     public static List<String> funWithAnagrams(List<String> text) {
         // Write your code here
         // space O(n)

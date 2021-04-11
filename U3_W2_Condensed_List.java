@@ -2,7 +2,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class U3W2CondensedList {
+public class U3_W2_Condensed_List {
     static class SinglyLinkedListNode {
         int data;
         SinglyLinkedListNode next;
