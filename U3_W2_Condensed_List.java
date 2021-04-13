@@ -1,5 +1,4 @@
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class U3_W2_Condensed_List {
@@ -49,11 +48,35 @@ public class U3_W2_Condensed_List {
         }
         return head;
     }
+
+    public static SinglyLinkedListNode condenseSolution(SinglyLinkedListNode head) {
+        // Write your code here
+        Set<Integer> numbers = new HashSet<>();
+        SinglyLinkedListNode current = head;
+        SinglyLinkedListNode prev = null;
+        while (current != null) {
+            int val = current.data;
+            if (!numbers.contains(val)) {
+                numbers.add(val);
+                prev = current;
+            } else {
+                prev.next = current.next;
+            }
+            current = current.next;
+        }
+        return head;
+    }
+
     public static void main(String[] args) {
         int[] list = {8, 3, 4, 3, 2, 6, 1, 2, 6};
         SinglyLinkedListNode test = new SinglyLinkedListNode(list);
         test.print();
         SinglyLinkedListNode result = condense(test);
+        result.print();
+
+        test = new SinglyLinkedListNode(list);
+        test.print();
+        result = condenseSolution(test);
         result.print();
     }
 }
