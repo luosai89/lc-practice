@@ -1,3 +1,5 @@
+package LC_Easy;
+
 /**
  * 4/13/2021 https://leetcode.com/problems/valid-perfect-square/
  * Side knowledge: 1 + 3 + 5 + 7 + ... 2n - 1 = n^2 -> O(n^1/2), not as efficient as O(longn)

@@ -1,3 +1,5 @@
+package LC_Easy;
+
 /**
  * 4/11/2021 https://leetcode.com/problems/long-pressed-name/
  * Two-pointer

@@ -1,3 +1,5 @@
+package LC_Easy;
+
 /**
  * 4/15/2021 https://leetcode.com/problems/guess-number-higher-or-lower/
  */

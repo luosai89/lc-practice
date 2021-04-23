@@ -1,3 +1,5 @@
+package LC_Easy;
+
 public class ListNode {
     int val;
     ListNode next;

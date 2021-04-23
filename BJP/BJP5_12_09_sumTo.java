@@ -1,3 +1,5 @@
+package BJP;
+
 /**
  * https://practiceit.cs.washington.edu/problem/view/bjp5/chapter12/e9-sumTo
  * Select appropriate variable type

@@ -1,3 +1,5 @@
+package LC_Easy;
+
 /**
  * 4/10/2021 https://leetcode.com/problems/remove-linked-list-elements/
  */
@@ -25,11 +27,11 @@ public class E_0203_Remove_Linked_List_Elements {
         node3.val = 2;
         ListNode node4 = new ListNode();
         node4.val = 1;
-//        ListNode node5 = new ListNode();
+//        LC.ListNode node5 = new LC.ListNode();
 //        node5.val = 4;
-//        ListNode node6 = new ListNode();
+//        LC.ListNode node6 = new LC.ListNode();
 //        node6.val = 5;
-//        ListNode node7 = new ListNode();
+//        LC.ListNode node7 = new LC.ListNode();
 //        node7.val = 6;
         node1.next = node2;
         node2.next = node3;

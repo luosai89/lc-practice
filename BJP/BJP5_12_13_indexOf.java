@@ -1,3 +1,5 @@
+package BJP;
+
 /**
  * https://practiceit.cs.washington.edu/problem/view/bjp5/chapter12/e13-indexOf
  * Had trouble determine the base case for when String b is not found, or WHEN NOT TO RETURN

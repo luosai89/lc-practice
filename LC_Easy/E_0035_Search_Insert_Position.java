@@ -1,3 +1,5 @@
+package LC_Easy;
+
 /**
  * 4/3/2021 https://leetcode.com/problems/search-insert-position/
  */

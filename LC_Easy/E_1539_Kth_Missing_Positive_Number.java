@@ -1,3 +1,5 @@
+package LC_Easy;
+
 /**
  * 4/2/2021 https://leetcode.com/problems/kth-missing-positive-number/
  */

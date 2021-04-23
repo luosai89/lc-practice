@@ -1,3 +1,5 @@
+package LC_Easy;
+
 import java.util.Arrays;
 
 class E_0217_Contains_Duplicate {

@@ -1,3 +1,5 @@
+package LC_Easy;
+
 /**
  * 4/6/2021 https://leetcode.com/problems/backspace-string-compare/
  */

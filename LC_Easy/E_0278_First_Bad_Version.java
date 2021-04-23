@@ -1,3 +1,5 @@
+package LC_Easy;
+
 /**
  * 4/4/2021 https://leetcode.com/problems/first-bad-version/
  * Runtime and memory usage seemed lower than ideal. Need to check up-voted answers.

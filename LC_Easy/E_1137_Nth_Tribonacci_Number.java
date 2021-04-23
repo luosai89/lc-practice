@@ -1,3 +1,5 @@
+package LC_Easy;
+
 /**
  * 4/9/2021 https://leetcode.com/problems/n-th-tribonacci-number/
  */

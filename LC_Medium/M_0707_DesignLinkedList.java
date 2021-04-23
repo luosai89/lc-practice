@@ -1,3 +1,5 @@
+package LC_Medium;
+
 /**
 * 3/30/2021 https://leetcode.com/problems/design-linked-list/
 *
@@ -83,8 +85,8 @@ class M_0707_DesignLinkedList {
 }
 
 /**
- * Your M_0707_DesignLinkedList object will be instantiated and called as such:
- * M_0707_DesignLinkedList obj = new M_0707_DesignLinkedList();
+ * Your LC_Medium.M_0707_DesignLinkedList object will be instantiated and called as such:
+ * LC_Medium.M_0707_DesignLinkedList obj = new LC_Medium.M_0707_DesignLinkedList();
  * int param_1 = obj.get(index);
  * obj.addAtHead(val);
  * obj.addAtTail(val);

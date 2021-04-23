@@ -1,5 +1,4 @@
-import java.util.Arrays;
-import java.util.List;
+package LC_Easy;
 
 public class E_0167_Two_Sum_II_Input_Array_Is_Sorted {
     public static int[] twoSum(int[] numbers, int target) {

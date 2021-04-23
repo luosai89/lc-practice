@@ -1,3 +1,5 @@
+package LC_Easy;
+
 class E_0766_Toeplitz_Matrix {
     public boolean isToeplitzMatrix(int[][] matrix) {
         int r = matrix.length;
