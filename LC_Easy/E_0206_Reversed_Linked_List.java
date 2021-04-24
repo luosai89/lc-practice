@@ -3,7 +3,7 @@ package LC_Easy;
 /**
  * 4/16/2021 https://leetcode.com/problems/reverse-linked-list/
  */
-public class E206_Reversed_Linked_List {
+public class E_0206_Reversed_Linked_List {
 
     public ListNode reverseListRecursive(ListNode head) {
         if (head == null || head.next == null) return head;
