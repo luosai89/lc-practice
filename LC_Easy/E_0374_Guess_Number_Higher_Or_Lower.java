@@ -8,10 +8,12 @@ public class E_0374_Guess_Number_Higher_Or_Lower {
         int start = 1;
         int end = n;
         while (start < end) {
+            // TODO - to avoid int overflow
             int mid = start + (end - start) / 2;
             int r = guess(mid);
             if (r == 0) return mid;
             if (r == 1) start = mid + 1;
+            // TODO - end = mid also works here
             else end = mid - 1;
         }
         return end;
