@@ -9,27 +9,36 @@ public class SF001 {
             counter1[c - start]++;
             counter2[c - start]++;
         }
-        int tot1 = target.length();
-        int tot2 = tot1;
 
-        int x = 0, y = s.length() - 1;
-        while (tot1 > 0 || tot2 > 0) {
+        int x = 0;
+        int y = s.length() - 1;
+
+        int tot = target.length();
+        while (tot > 0) {
             char a = s.charAt(x);
-            char b = s.charAt(y);
-
-            if (tot1 > 0 && counter1[a-start] > 0) {
-                tot1--;
-                counter1[a-start]--;
-                x++;
-            } else if (tot1 > 0) x++;
-
-            if (tot2 > 0 && counter2[b-start] > 0) {
-                tot2--;
-                counter2[b-start]--;
-                y--;
-            } else if (tot2 > 0) y--;
+            if (counter1[a - start] > 0) {
+                tot--;
+                counter1[a - start]--;
+            }
+            x++;
         }
+
+        tot = target.length();
+        while (tot > 0) {
+            char a = s.charAt(y);
+            if (counter2[a - start] > 0) {
+                tot--;
+                counter2[a - start]--;
+            }
+            y--;
+        }
+
         return (y+1)-(x-1)-1;
+    }
+
+    public static void main(String[] args) {
+        String test = "programmerxxxprozmerqgram";
+        System.out.println(findGap(test, "programmer"));
     }
 
 }
