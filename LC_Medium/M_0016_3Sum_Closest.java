@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * 6/6/2021 https://leetcode.com/problems/3sum-closest/
  */
-public class E_0016_3Sum_Closest {
+public class M_0016_3Sum_Closest {
     
     public static int threeSumClosest(int[] nums, int target) {
         // cannot use Integer.MAX_VALUE in case the target is negative
