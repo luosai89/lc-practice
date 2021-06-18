@@ -7,7 +7,7 @@ import java.util.Map;
  * Premium
  * https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
  * 2021: 6/17 (makeup 6/11)
- * Sliding window
+ * Sliding window - related to M340
  */
 public class M_0159_Longest_Substring_with_at_Most_Two_Distinct_Characters {
 
