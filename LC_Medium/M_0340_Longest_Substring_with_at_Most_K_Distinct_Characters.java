@@ -5,7 +5,7 @@ import java.util.Map;
 
 /**
  * https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/
- * 2021: 6/17 (makeup 6/7) 
+ * 2021: 6/17 (makeup 6/7)
  * Sliding window - related to M159
  */
 public class M_0340_Longest_Substring_with_at_Most_K_Distinct_Characters {
