@@ -8,7 +8,7 @@ import java.util.PriorityQueue;
  * 6/20 (makeup 6/3)
  * Intervals
  * method 1: use PriorityQueue and keep the latest meeting time;
- * (?) method 2: use two arrays to store start/end times separately
+ * method 2: use two arrays to store start/end times separately https://www.youtube.com/watch?v=0roQnDBC27o
  */
 public class M_0253_Meeting_Rooms_II {
 
@@ -45,13 +45,16 @@ public class M_0253_Meeting_Rooms_II {
             s[i] = intervals[i][0];
             e[i] = intervals[i][1];
         }
+        // sorting the start/end times have no impact on the result
+        // we only care about the timeline of meeting starts and ends
+        // when the second meeting starts at 5, the first meeting will not end until 10, so we definitely need a second room
+        // when the third meeting starts at 15, the first meeting would have ended by 10, so we don't need a third room
         Arrays.sort(s); // 0,  5,  15
         Arrays.sort(e); // 10, 20, 30
 
-        // TODO - count the rooms
         int result = 0;
         for (int i = 0, j = 0; i < intervals.length; i++) {
-            // if the start time is same or later than end time, no overlap
+            // if the start time is same or later than end time, no overlap, can use the same room
             if (s[i] >= e[j]) j++;
             // otherwise, add a room
             else result++;
