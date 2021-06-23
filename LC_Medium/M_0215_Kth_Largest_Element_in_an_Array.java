@@ -5,7 +5,7 @@ import java.util.Random;
 
 /**
  * https://leetcode.com/problems/kth-largest-element-in-an-array/
- * 2021: 6/21
+ * 2021: 6/21 pq, 6/22 qs
  * Heap - top K elements: 1) priority queue
  * 2) quick sort with random partition https://www.youtube.com/watch?v=zyskis1Gw0c
  */
