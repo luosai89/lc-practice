@@ -1,5 +1,7 @@
 package LC_Easy;
 
+import Resource.ListNode;
+
 /**
  * 5/12/2021 https://leetcode.com/problems/palindrome-linked-list/
  * This is the combination of finding mid point (876) and reversing linked list (206)

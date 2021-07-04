@@ -1,5 +1,7 @@
 package LC_Easy;
 
+import Resource.ListNode;
+
 /**
  * 5/11/2021 https://leetcode.com/problems/merge-two-sorted-lists/
  */

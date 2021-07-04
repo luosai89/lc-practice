@@ -1,5 +1,7 @@
 package LC_Easy;
 
+import Resource.ListNode;
+
 public class E_0876_Middle_of_the_Linked_List {
     /**
      * Lee215 fast and slow pointer. Because the fast pointer runs twice as fast, when fast pointer reaches the end,

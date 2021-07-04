@@ -1,10 +1,12 @@
-package LC_Easy;
+package LC_Medium;
+
+import Resource.ListNode;
 
 /**
  * https://leetcode.com/problems/swap-nodes-in-pairs/
  * #1 - 06/10/2021
  */
-public class E_0024_Swap_Nodes_in_Pairs {
+public class M_0024_Swap_Nodes_in_Pairs {
 
     public ListNode swapPairs(ListNode head) {
         ListNode newHead = new ListNode();

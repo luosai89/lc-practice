@@ -1,5 +1,7 @@
 package LC_Easy;
 
+import Resource.ListNode;
+
 /**
  * 4/10/2021 https://leetcode.com/problems/remove-linked-list-elements/
  */

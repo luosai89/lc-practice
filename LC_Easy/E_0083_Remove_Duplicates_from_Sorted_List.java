@@ -1,5 +1,7 @@
 package LC_Easy;
 
+import Resource.ListNode;
+
 /**
  * https://leetcode.com/problems/remove-duplicates-from-sorted-list/
  */

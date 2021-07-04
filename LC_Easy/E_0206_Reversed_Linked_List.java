@@ -1,5 +1,7 @@
 package LC_Easy;
 
+import Resource.ListNode;
+
 /**
  * 4/16/2021 https://leetcode.com/problems/reverse-linked-list/
  */

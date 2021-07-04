@@ -1,5 +1,7 @@
 package LC_Easy;
 
+import Resource.ListNode;
+
 /**
  * 5/12/21 LinkedList https://leetcode.com/problems/linked-list-cycle/
  * 1) fast/slow pointer
