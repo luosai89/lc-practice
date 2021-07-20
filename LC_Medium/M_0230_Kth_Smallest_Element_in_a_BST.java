@@ -12,7 +12,7 @@ import java.util.Deque;
  * Solutions: 1) iterative, 2) recursive
  * Followup: TODO
  */
-public class M_230_Kth_Smallest_Element_in_a_BST {
+public class M_0230_Kth_Smallest_Element_in_a_BST {
     // Iterative
     public int kthSmallest1(TreeNode root, int k) {
         // inorder traversal (left, root, right)
