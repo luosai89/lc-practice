@@ -1,4 +1,4 @@
-package TIPP;
+package Others;
 
 import java.util.HashSet;
 import java.util.List;
