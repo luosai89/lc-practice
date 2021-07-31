@@ -36,23 +36,59 @@ package Others;
 
 import Resource.TNode;
 
-import java.util.List;
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * 7/31 (makeup 7/18)
  */
 public class T_0802_02_Minimum_Path {
-    public static int minimumPath(TNode root) {
+    public static int minimumPathRecursive(TNode root) {
         // Write your code here
         if (root.left == null && root.right == null) {
             return root.data;
         }
         if (root.left == null) {
-            return root.data + minimumPath(root.right);
+            return root.data + minimumPathRecursive(root.right);
         }
         if (root.right == null) {
-            return root.data + minimumPath(root.left);
+            return root.data + minimumPathRecursive(root.left);
         }
-        return root.data + Math.min(minimumPath(root.right), minimumPath(root.left));
+        return root.data + Math.min(minimumPathRecursive(root.right), minimumPathRecursive(root.left));
+    }
+
+    // not sure if this is the best method, passed all tests
+    public static int minimumPathIterative(TNode root) {
+        // Write your code here
+        Set<TNode> visited = new HashSet<>();
+        visited.add(null);
+        Deque<TNode> stack = new ArrayDeque<>();
+        TNode t = root;
+        int minSum = Integer.MAX_VALUE;
+        int sum = 0;
+        while (t != null) {
+            stack.offerLast(t);
+            visited.add(t);
+            sum += t.data;
+            if (t.left != null) t = t.left;
+            else if (t.right != null) t = t.right;
+            else {
+                // both null - reached leaf node
+                // compare against minSum and remove the leaf node
+                minSum = Math.min(sum, minSum);
+                // if the last node has no unvisited path left, remove the node and subtract its data from the sum
+                while (!stack.isEmpty() && visited.contains(stack.peekLast().left) && visited.contains(stack.peekLast().right)) {
+                    TNode removed = stack.pollLast();
+                    sum -= removed.data;
+                }
+                if (stack.isEmpty()) break;
+                // otherwise, visit unvisited notes
+                if (visited.contains(stack.peekLast().left)) t = stack.peekLast().right;
+                else if (visited.contains(stack.peekLast().right)) t = stack.peekLast().left;
+            }
+        }
+        return minSum;
     }
 }
