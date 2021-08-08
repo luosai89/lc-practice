@@ -5,8 +5,8 @@ import java.util.Deque;
 
 /**
  * https://leetcode.com/problems/sliding-window-maximum/
- * 7/22
- * Amazon high freq
+ * 7/22, 8/8
+ * Amazon OA
  */
 public class H_0239_Sliding_Window_Maximum {
     public int[] maxSlidingWindow(int[] nums, int k) {
@@ -15,7 +15,7 @@ public class H_0239_Sliding_Window_Maximum {
 
         // i to traverse the index of nums
         int i = 0;
-        // dq as window of indexes
+        // TODO dq as window of indexes so we know when to drop (head index is >= end - k)
         // we will keep the index of the max value at the front
         Deque<Integer> dq = new ArrayDeque<>();
 
@@ -24,6 +24,7 @@ public class H_0239_Sliding_Window_Maximum {
             if (!dq.isEmpty() && dq.peekFirst() == i - k) {
                 dq.pollFirst();
             }
+            // TODO since we must remove from the last, do NOT offer until all smaller has been removed from back!
             // remove from back all values smaller than current number
             while (!dq.isEmpty() && nums[dq.peekLast()] < nums[i]) {
                 dq.pollLast();
