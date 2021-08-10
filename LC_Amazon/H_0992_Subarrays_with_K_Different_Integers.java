@@ -4,13 +4,24 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 8/5 (1), 8/9 (2)
+ */
 public class H_0992_Subarrays_with_K_Different_Integers {
 
-    public static int subarraysWithKDistinctSlowerWithHelper(int[] nums, int k) {
-        return subarraysWithAtMostKDistinct(nums, k) - subarraysWithAtMostKDistinct(nums, k - 1);
+    public static int subarraysWithKDistinct(int[] nums, int k) {
+        return subarraysWithAtMostKDistinct(nums, k) - subarraysWithAtMostKDistinct(nums,k - 1);
     }
 
     public static int subarraysWithAtMostKDistinct(int[] nums, int k) {
+        return 0;
+    }
+
+    public static int subarraysWithKDistinctSlowerWithHelperSolution(int[] nums, int k) {
+        return subarraysWithAtMostKDistinctSolution(nums, k) - subarraysWithAtMostKDistinctSolution(nums, k - 1);
+    }
+
+    public static int subarraysWithAtMostKDistinctSolution(int[] nums, int k) {
         int subarrayCount = 0;
         Map<Integer, Integer> numFrequency = new HashMap<>(); // TODO space O(2n)
 
@@ -57,7 +68,7 @@ public class H_0992_Subarrays_with_K_Different_Integers {
     }
 
     public static void test(int[] nums, int k, int expected) {
-        int result = subarraysWithKDistinctSlowerWithHelper(nums, k);
+        int result = subarraysWithKDistinct(nums, k);
         System.out.printf("%s %s: Got %d Expected %d", result == expected ? "SUCCESS" : "FAIL",
             Arrays.toString(nums), result, expected);
         System.out.println();
