@@ -1,4 +1,4 @@
-package LC_Amazon;
+package LC_Hard;
 
 import java.util.ArrayList;
 import java.util.Arrays;

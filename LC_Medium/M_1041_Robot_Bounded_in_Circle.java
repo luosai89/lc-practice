@@ -1,4 +1,4 @@
-package LC_Amazon;
+package LC_Medium;
 
 /**
  * https://leetcode.com/problems/robot-bounded-in-circle/

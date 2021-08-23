@@ -1,4 +1,4 @@
-package LC_Amazon;
+package LC_Medium;
 
 import java.util.Arrays;
 
